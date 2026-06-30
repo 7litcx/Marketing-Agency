@@ -9,7 +9,7 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-background dark:bg-dark">
+    <section className="relative min-h-screen lg:h-screen w-full flex items-center justify-center overflow-hidden bg-background dark:bg-dark pt-28 pb-12 lg:py-0">
       {/* Background Gradient Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-primary/20 blur-[120px]" />
@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="container relative z-10 mx-auto px-6 h-full flex flex-col lg:flex-row items-center justify-between">
         
         {/* Text Content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center items-start pt-20 lg:pt-0 z-20">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center items-start lg:pt-0 z-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

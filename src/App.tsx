@@ -14,7 +14,6 @@ import FAQ from './sections/FAQ';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import Navbar from './sections/Navbar';
-import CustomCursor from './components/ui/CustomCursor';
 import { Toaster } from 'sonner';
 
 function App() {
@@ -48,7 +47,6 @@ function App() {
         <meta name="description" content="We craft premium digital experiences that help ambitious brands grow through design, marketing, development, and storytelling." />
       </Helmet>
       
-      <CustomCursor />
       <Toaster position="bottom-right" />
       <Navbar />
       
