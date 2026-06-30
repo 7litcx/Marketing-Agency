@@ -88,8 +88,8 @@ const Contact = () => {
             <div className="space-y-8">
               {[
                 { icon: Mail, title: t('contact.emailUs'), content: 'soul.agency2@gmail.com' },
-                { icon: Phone, title: t('contact.callUs'), content: '+966 543068264' },
-                { icon: MapPin, title: t('contact.visitUs'), content: 'Jeddah, Saudi Arabia' },
+                { icon: Phone, title: t('contact.callUs'), content: '+967 779590734' },
+                { icon: MapPin, title: t('contact.visitUs'), content: 'Hadramaut, Yemen' },
               ].map((item, index) => (
                 <motion.div 
                   key={index}

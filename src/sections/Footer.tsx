@@ -73,8 +73,8 @@ const Footer = () => {
                   soul.agency2@gmail.com
                 </a>
               </li>
-              <li>+966 543068264</li>
-              <li>Jeddah, Saudi Arabia</li>
+              <li>+967 779590734</li>
+              <li>Hadramaut, Yemen</li>
             </ul>
           </div>
 
