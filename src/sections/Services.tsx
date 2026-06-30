@@ -5,14 +5,24 @@ import { useTranslation } from 'react-i18next';
 import { 
   PenTool, Image as ImageIcon, Share2, FileText, Megaphone, 
   Code, Layout, Camera, Video, Film, Printer, 
-  TrendingUp 
+  TrendingUp, Smartphone
 } from 'lucide-react';
 
-const icons = [
-  PenTool, ImageIcon, Share2, FileText, Megaphone, 
-  Code, Layout, Camera, Video, Film, Printer, 
-  TrendingUp 
-];
+const iconMap: Record<string, React.ComponentType<any>> = {
+  brand: PenTool,
+  logo: ImageIcon,
+  social: Share2,
+  content: FileText,
+  ads: Megaphone,
+  web: Code,
+  uiux: Layout,
+  app: Smartphone,
+  photo: Camera,
+  video: Video,
+  motion: Film,
+  printing: Printer,
+  digital: TrendingUp
+};
 
 const MagneticCard = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -47,7 +57,7 @@ const MagneticCard = ({ children }: { children: React.ReactNode }) => {
 const Services = () => {
   const { t } = useTranslation();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.05 });
-  const cards = t('services.cards', { returnObjects: true }) as Array<{ title: string; desc: string }>;
+  const cards = t('services.cards', { returnObjects: true }) as Array<{ id: string; title: string; desc: string }>;
 
   return (
     <section className="py-32 bg-gray-50 dark:bg-dark/50 relative" id="services">
@@ -74,7 +84,7 @@ const Services = () => {
 
         <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {cards.map((service, index) => {
-            const Icon = icons[index];
+            const Icon = iconMap[service.id] || Code;
             return (
               <motion.div
                 key={index}
