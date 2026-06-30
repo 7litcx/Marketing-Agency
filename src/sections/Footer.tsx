@@ -1,4 +1,4 @@
-import { FaTwitter, FaLinkedin, FaInstagram, FaDribbble, FaBehance } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '../hooks/useTheme';
 
@@ -25,20 +25,21 @@ const Footer = () => {
               {t('footer.desc')}
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-muted dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">
-                <FaTwitter className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-muted dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">
+              <a 
+                href="https://www.linkedin.com/company/%D8%B3%D9%88%D9%84-%D9%85%D9%8A%D8%AF%D9%8A%D8%A7-soul-media/?viewAsMember=true" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-muted dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors"
+              >
                 <FaLinkedin className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-muted dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">
+              <a 
+                href="https://www.instagram.com/soulmedia_mkt?igsh=ODE5bDBlZWgxczN1" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-muted dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors"
+              >
                 <FaInstagram className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-muted dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">
-                <FaDribbble className="w-4 h-4" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center text-muted dark:text-gray-400 hover:bg-primary hover:text-white dark:hover:bg-primary transition-colors">
-                <FaBehance className="w-4 h-4" />
               </a>
             </div>
           </div>
